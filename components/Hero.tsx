@@ -116,9 +116,10 @@ export default function Hero() {
     hero?.secondaryButtonText ??
     "Download CV";
 
-  const secondaryButtonUrl =
+    const secondaryButtonUrl =
+    hero?.cvUrl ??
     hero?.secondaryButtonUrl ??
-    "/cv/Vickry-Kamaluddin-CV.pdf";
+    null;
 
   const basedText =
     hero?.basedText ??
